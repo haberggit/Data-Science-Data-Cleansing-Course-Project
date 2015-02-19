@@ -26,6 +26,7 @@ The original data were transformed as follows:
 4.  The data were then grouped (group_by()) by subject and activity, 
     then summarized (summarise_each()) to get the mean for each numeric observation
 ```
+```
 The resulting tidy data set created by run_analysis.R is called "course_proj.txt" and contains the following 88 variables.  
 [1] "sub_nbr" - integer - the subject number - valid subject numbers are 1-30
 [2] "activ_label" - character - the label describing the activity - valid activities are
@@ -80,3 +81,4 @@ The resulting tidy data set created by run_analysis.R is called "course_proj.txt
 [83] "fBodyGyro.std...Y"                    "fBodyGyro.std...Z"                   
 [85] "fBodyAccMag.std.."                    "fBodyBodyAccJerkMag.std.."           
 [87] "fBodyBodyGyroMag.std.."               "fBodyBodyGyroJerkMag.std.."      
+```
