@@ -5,15 +5,17 @@ Full details of all the original data and their descriptions can be found at:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 The original data sets were:
-features.txt -- labels for all of the 561 features in the observation data sets
-activity_labels.txt -- labels for the 6 activities measured
-X_test.txt -- the actual data measurements for the "test" subjects
-y_test.txt -- the activity codes relating to the "test" data observations
-subject_test.txt -- the subject codes relating to the "test" data observations
-X_train.txt  -- the actual data measurements for the "train" subjects
-y_train.txt  -- the activity codes relating to the "train" data observations
-subject_train.txt -- -- the subject codes relating to the "train" data observations
-
+```
+* features.txt -- labels for all of the 561 features in the observation data sets
+* activity_labels.txt -- labels for the 6 activities measured
+* X_test.txt -- the actual data measurements for the "test" subjects
+* y_test.txt -- the activity codes relating to the "test" data observations
+* subject_test.txt -- the subject codes relating to the "test" data observations
+* X_train.txt  -- the actual data measurements for the "train" subjects
+* y_train.txt  -- the activity codes relating to the "train" data observations
+* subject_train.txt -- -- the subject codes relating to the "train" data observations
+```
+```
 The original data were transformed as follows:
 1.  A single data frame for each "test" and "train" was created by 
     merging (merge()) the activty codes and labels
@@ -23,7 +25,7 @@ The original data were transformed as follows:
 3.  The "test" and "train" df's were then combined into a single df for further analysis
 4.  The data were then grouped (group_by()) by subject and activity, 
     then summarized (summarise_each()) to get the mean for each numeric observation
-
+```
 The resulting tidy data set created by run_analysis.R is called "course_proj.txt" and contains the following 88 variables.  
 [1] "sub_nbr" - integer - the subject number - valid subject numbers are 1-30
 [2] "activ_label" - character - the label describing the activity - valid activities are
@@ -33,7 +35,7 @@ The resulting tidy data set created by run_analysis.R is called "course_proj.txt
                  SITTING
                  STANDING
                  LAYING
-[3:88] -  numeric - time and frequency domain variables -- details are described at the url cited above
+[3:88] -  numeric - contains calcluated mean() for the subject/activity.  Each of the following 86 variables contains a calculated mean of the time and frequency domain variables that were denoted as a mean or standard deviation variable in the original data sets (note: details of the original data are described at the url cited above.)
 
  [3] "tBodyAcc.mean...X"                    "tBodyAcc.mean...Y"                   
  [5] "tBodyAcc.mean...Z"                    "tGravityAcc.mean...X"                
