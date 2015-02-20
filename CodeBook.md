@@ -27,7 +27,8 @@ The original data were transformed as follows:
     then summarized (summarise_each()) to get the mean for each numeric observation
 ```
 ```
-The resulting tidy data set created by run_analysis.R is called "course_proj.txt" and contains the following 88 variables.  
+The resulting tidy data set created by run_analysis.R is called "course_proj.txt" 
+and contains the following 88 variables.  
 [1] "sub_nbr" - integer - the subject number - valid subject numbers are 1-30
 [2] "activ_label" - character - the label describing the activity - valid activities are
                  WALKING
@@ -36,7 +37,10 @@ The resulting tidy data set created by run_analysis.R is called "course_proj.txt
                  SITTING
                  STANDING
                  LAYING
-[3:88] -  numeric - contains calcluated mean() for the subject/activity.  Each of the following 86 variables contains a calculated mean of the time and frequency domain variables that were denoted as a mean or standard deviation variable in the original data sets (note: details of the original data are described at the url cited above.)
+[3:88] -  numeric - contains calcluated mean() for the subject/activity.  
+Each of the following 86 variables contains a calculated mean of the time and frequency domain variables 
+that were denoted as a mean or standard deviation variable in the original data sets 
+(note: details of the original data are described at the url cited above.)
 
  [3] "tBodyAcc.mean...X"                    "tBodyAcc.mean...Y"                   
  [5] "tBodyAcc.mean...Z"                    "tGravityAcc.mean...X"                
